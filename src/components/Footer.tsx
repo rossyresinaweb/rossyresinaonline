@@ -57,8 +57,8 @@ const Footer = () => {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="max-w-screen-2xl mx-auto px-6 h-14 flex items-center justify-between text-sm text-blue-100">
-          <p>Todos los derechos reservados Rossy Resina Perú 2025</p>
+        <div className="max-w-screen-2xl mx-auto px-6 md:h-14 flex flex-col md:flex-row items-center justify-between gap-2 md:gap-0 py-3 md:py-0 text-sm text-blue-100">
+          <p className="text-center md:text-left">Todos los derechos reservados Rossy Resina Perú 2025</p>
           <div className="flex items-center gap-4">
             <Link className="hover:underline" href="/about-us">Sobre nosotros</Link>
             <Link className="hover:underline" href="/faq">Ayuda</Link>

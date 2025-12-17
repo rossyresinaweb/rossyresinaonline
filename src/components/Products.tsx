@@ -19,7 +19,7 @@ const Products = ({ productData }: any) => {
     return u;
   };
   return (
-    <div className="w-full px-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+    <div className="w-full px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
       {productData.map(
         ({
           _id,
@@ -35,9 +35,9 @@ const Products = ({ productData }: any) => {
         }: ProductProps) => (
           <div
             key={_id}
-            className="w-full bg-transparent text-black p-4 border border-gray-300 rounded-lg group overflow-hidden"
+            className="w-full bg-transparent text-black p-3 md:p-4 border border-gray-300 rounded-lg group overflow-hidden"
           >
-            <div className="w-full h-[260px] relative">
+            <div className="w-full h-48 sm:h-56 md:h-60 lg:h-[260px] relative">
               <Link
                 href={{
                   pathname: `/${_id}`,

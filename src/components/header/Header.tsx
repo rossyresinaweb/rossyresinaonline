@@ -168,7 +168,7 @@ const Header = () => {
         
         {/* cart with dropdown */}
         <div
-          className="px-2 cursor-pointer duration-300 h-[70%] relative hidden sm:flex items-center"
+          className="px-2 cursor-pointer duration-300 h-[70%] relative flex items-center"
           onMouseEnter={() => {
             if (productData.length) {
               setOpenCategories(false);
@@ -183,7 +183,7 @@ const Header = () => {
               src={cartIcon}
               alt="carrito"
             />
-            <p className="text-xs text-white font-bold mt-3">Carrito</p>
+            <p className="text-xs text-white font-bold mt-3 hidden sm:block">Carrito</p>
             <span className="absolute text-amazon_yellow text-sm top-2 left-[36px] font-semibold">
               {productData ? productData.length : 0}
             </span>
