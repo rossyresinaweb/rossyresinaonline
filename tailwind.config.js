@@ -1,0 +1,39 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      screens: {
+        xs: "320px",
+        sm: "375px",
+        sml: "500px",
+        md: "667px",
+        mdl: "768px",
+        lg: "960px",
+        lgl: "1024px",
+        xl: "1280px",
+      },
+      colors: {
+        // Paleta Rossy Resina
+        brand_purple: "#6E2CA1",
+        brand_pink: "#F03AA8",
+        brand_teal: "#10C4C4",
+        brand_yellow: "#FFDD3C",
+        brand_green: "#7CD957",
+        // Mantener clases existentes apuntando a la nueva paleta
+        amazon_blue: "#6E2CA1",
+        amazon_light: "#5A3A8E",
+        amazon_yellow: "#FFDD3C",
+        lightText: "#ccc",
+      },
+      fontFamily: {
+        bodyFont: ["Barlow", "Montserrat", "Roboto", "Open Sans", "sans-serif"],
+      },
+    },
+  },
+  plugins: [],
+};
